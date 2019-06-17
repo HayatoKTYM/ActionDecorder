@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<moduleContext>
+
+  <conf>
+    <moduleName>RobotActionDecoder</moduleName>
+    <description>ActionDecoder</description>
+  </conf>
+
+  <remote name="AM">
+    <group>robot</group>
+    <role>ActionManager</role>
+  </remote>
+
+  <remote name="PNS">
+    <group>robot</group>
+    <role>PersonNameServer</role>
+  </remote>
+
+  <remote name="P_AP">
+    <group>pepper</group>
+    <role>ActionPlayer</role>
+  </remote>
+
+  <remote name="P_AP_S">
+    <group>pepper</group>
+    <role>ActionPlayer_status</role>
+  </remote>
+
+  <remote name="SO_AP">
+    <group>sota</group>
+    <role>ActionPlayer</role>
+  </remote>
+
+  <remote name="SO_AP_S">
+    <group>sota</group>
+    <role>ActionPlayer_status</role>
+  </remote>
+
+  <remote name="SC_AP">
+    <group>schema</group>
+    <role>ActionPlayer</role>
+  </remote>
+
+  <remote name="SC_AP_S">
+    <group>schema</group>
+    <role>ActionPlayer_status</role>
+  </remote>
+
+  <local>
+    <property name="position_x">
+        <value>""</value>
+    </property>
+    <property name="position_y">
+        <value>""</value>
+    </property>
+    <property name="body_y">
+        <value>""</value>
+    </property>
+    <property name="Speaked_Content">
+        <value>""</value>
+    </property>
+    <property name="tree">
+        <value>""</value>
+    </property>
+
+    <method name="play">
+      <description></description>
+      <param name="layerName">
+         <description></description>
+      </param>
+      <param name="actionName">
+         <description></description>
+      </param>
+      <param name="x">
+         <description></description>
+      </param>
+      <param name="y">
+         <description></description>
+      </param>
+      <param name="keep">
+         <description>0</description>
+      </param>
+      <param name="autoend">
+         <description>0</description>
+      </param>
+      <param name="duration">
+         <description>0</description>
+      </param>
+      <param name="target">
+         <description>0</description>
+      </param>
+      <param name="content">
+         <description></description>
+      </param>
+    </method>
+
+    <method name="cancel">
+      <param name="layerName">
+         <description></description>
+      </param>
+      <param name="actionName">
+         <description></description>
+      </param>
+    </method>
+
+  </local>
+
+
+  <disclosure>
+   <group>robot</group>
+   <role>ActionDecoder_Speak</role>
+   <propertyRef name="Speaked_Content"/>
+ </disclosure>
+
+  <disclosure>
+   <group>robot</group>
+   <role>ActionDecoder_Tree</role>
+    <propertyRef name="tree"/>
+ </disclosure>
+
+  <disclosure>
+   <group>robot</group>
+   <role>ActionDecoder</role>
+   <propertyRef name="state"/>
+   <propertyRef name="position_y"/>
+   <propertyRef name="position_x"/>
+   <propertyRef name="body_y"/>
+ </disclosure>
+
+</moduleContext>

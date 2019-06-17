@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<moduleContext>
+
+  <conf>
+    <moduleName>PM</moduleName>
+    <description>PersonManager Manager</description>
+  </conf>
+
+  <remote name="AD">
+   <group>robot</group>
+   <role>ActionDecoder</role>
+  </remote>
+
+  <remote name="PD">
+    <group>ParticipantDetector</group>
+    <role>Detect</role>
+  </remote>S
+
+  <local>
+     <property name="Person_A_position">
+        <description>Person_A_position</description>
+        <value>[0,0,0]</value>     
+     </property>
+     <property name="Person_B_position">
+        <description>Person_B_position</description>
+        <value>[0,0,0]</value>     
+     </property>
+     <property name="Person_C_position">
+        <description>Person_C_position</description>
+        <value>[0,0,0]</value>    
+      </property>
+     <property name="Person_D_position">
+        <description>Person_D_position</description>
+        <value>[0,0,0]</value>    
+      </property>
+     <property name="Person_A_position_str">
+        <description>Person_A_position_str</description>
+        <value>[0,0,0]</value>    
+      </property>
+     <property name="Person_B_position_str">
+        <description>Person_B_position_str</description>
+        <value>[0,0,0]</value>    
+      </property>
+     <property name="Person_C_position_str">
+        <description>Person_C_position_str</description>
+        <value>[0,0,0]</value>    
+      </property>
+     <property name="Person_D_position_str">
+        <description>Person_D_position_str</description>
+        <value>[0,0,0]</value>    
+      </property>
+     <property name="Person_X_position">
+        <description>Person_X_position</description>
+        <value>[0,0,0]</value>      
+     </property>
+     <property name="Center_position">
+        <description>Person_X_position</description>
+        <value>[0,0,0]</value>      
+     </property>
+     <property name="Robot_position">
+        <description>Robot_position</description>
+        <value>[0,0,0]</value>      
+     </property>
+     <property name="Robot_position_str">
+        <description>Robot_position_str</description>
+        <value>"0,0,0"</value>      
+     </property>
+     <property name="Robot_body_y_str">
+        <description>Robot_body_y_str</description>
+        <value>"0"</value>
+     </property>
+
+     <property name="Person_A_look">
+        <description>Person_A_position</description>
+        <value>[R]</value>     
+     </property>
+     <property name="Person_B_look">
+        <description>Person_B_position</description>
+        <value>[R]</value>     
+     </property>
+     <property name="Person_C_look">
+        <description>Person_C_position</description>
+        <value>[R]</value>     
+     </property>
+     <property name="Person_D_look">
+        <description>Person_D_position</description>
+        <value>[R]</value>     
+     </property>
+     <property name="Person_A_angle">
+        <description>Person_A_angle</description>
+        <value>[0,0,0]</value>   
+     </property>
+     <property name="Person_B_angle">
+        <description>Person_B_angle</description>
+        <value>[0,0,0]</value>   
+     </property>
+     <property name="Person_C_angle">
+        <description>Person_C_angle</description>
+        <value>[0,0,0]</value>   
+     </property>
+     <property name="Person_D_angle">
+        <description>Person_D_angle</description>
+        <value>[0,0,0]</value>   
+     </property>
+
+  </local>
+
+  <disclosure>
+   <group>PersonManager</group>
+   <role>Position</role>
+   <propertyRef name="Person_A_position"/>
+   <propertyRef name="Person_B_position"/>
+   <propertyRef name="Person_C_position"/>
+   <propertyRef name="Person_D_position"/>
+   <propertyRef name="Person_X_position"/>
+   <propertyRef name="Person_A_position_str"/>
+   <propertyRef name="Person_B_position_str"/>
+   <propertyRef name="Person_C_position_str"/>
+   <propertyRef name="Person_D_position_str"/>
+   <propertyRef name="Robot_position"/>
+   <propertyRef name="Robot_position_str"/>
+   <propertyRef name="Robot_body_y_str"/>
+   <propertyRef name="Center_position"/>
+   <propertyRef name="Person_A_look"/>
+   <propertyRef name="Person_B_look"/>
+   <propertyRef name="Person_C_look"/>
+   <propertyRef name="Person_D_look"/>
+   <propertyRef name="Person_A_angle"/>
+   <propertyRef name="Person_B_angle"/>
+   <propertyRef name="Person_C_angle"/>
+   <propertyRef name="Person_D_angle"/>
+ </disclosure>
+</moduleContext>

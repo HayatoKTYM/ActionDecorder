@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<moduleContext>
+
+  <conf>
+    <moduleName>SotaActionManager</moduleName>
+    <description>action_manager</description>
+  </conf>
+
+  <local>
+    <property name="A">
+        <value>0</value>     
+    </property>
+    <property name="B">
+        <value>0</value>     
+    </property>
+    <property name="C">
+        <value>0</value>     
+    </property>
+
+
+    <method name="activate">
+      <param name="layerName">
+         <value>""</value>  
+         <description></description>
+      </param>
+      <description></description>
+        <param name="isActivate">
+        <value>0</value>  
+      </param>
+    </method>
+
+  </local>
+
+
+  <disclosure>
+   <group>robot</group>
+   <role>ActionManager</role>
+   <propertyRef name="A"/>
+   <propertyRef name="B"/>
+   <propertyRef name="C"/>
+ </disclosure>
+
+</moduleContext>

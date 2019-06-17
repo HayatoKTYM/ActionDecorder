@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<moduleContext>
+
+  <conf>
+    <moduleName>sample2</moduleName>
+    <description>Sample Module</description>
+  </conf>
+
+  <remote name="PM">
+    <group>PersonManager</group>
+    <role>Position</role>
+  </remote>
+
+  <remote name="action">
+    <group>robot</group>
+    <role>actionPlayer</role>
+  </remote>
+
+  <remote name="SRB">
+    <group>speech</group>
+    <role>recognizer_nandoku_panelist_B</role>
+  </remote>
+</moduleContext>

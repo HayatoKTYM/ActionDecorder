@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<moduleContext>
+
+  <conf>
+    <moduleName>Sota_PNS</moduleName>
+    <description>PNS</description>
+  </conf>
+
+  <local>
+    <method name="regist">
+      <param name="pointName">
+         <value>""</value>  
+         <description></description>
+      </param>
+      <description></description>
+        <param name="position">
+        <value>[0,0,0]</value>  
+      </param>
+    </method>
+    <property name="positions1">
+        <value>0</value>     
+    </property>
+    <property name="positions2">
+        <value>0</value>     
+    </property>
+    <property name="positions3">
+        <value>0</value>     
+    </property>
+  </local>
+
+  <remote name="PM">
+    <group>PersonManager</group>
+    <role>Position</role>
+  </remote>
+
+  <disclosure>
+   <group>robot</group>
+   <role>PersonNameServer</role>
+   <propertyRef name="positions1"/>
+   <propertyRef name="positions2"/>
+   <propertyRef name="positions3"/>
+ </disclosure>
+
+</moduleContext>
